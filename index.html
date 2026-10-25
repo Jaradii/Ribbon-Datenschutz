@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ribbon – Datenschutz & Support</title>
+  <meta name="description" content="Datenschutzerklärung und Support für die App Ribbon – Aufgaben & Notizen.">
+  <style>
+    :root { color-scheme: light dark; --accent: #5A4AD1; --bg: #F7F6FB; --bar: rgba(247, 246, 251, 0.85); --card: #FFFFFF; --border: #E3E0F2; --text: #1C1B22; --muted: #6B6878; }
+    @media (prefers-color-scheme: dark) {
+      :root { --accent: #8B7FF2; --bg: #121118; --bar: rgba(18, 17, 24, 0.85); --card: #1C1B24; --border: #2E2B3D; --text: #F2F1F7; --muted: #A6A3B5; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 72px; }
+    body { margin: 0; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+    a { color: var(--accent); }
+
+    .bar { position: sticky; top: 0; z-index: 1; background: var(--bar); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+    .bar-inner { max-width: 850px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 700; font-size: 1.1rem; }
+    nav { display: flex; gap: 6px; }
+    nav a { padding: 6px 14px; border-radius: 999px; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    nav a:hover { color: var(--text); }
+    body:has(#datenschutz:target) nav a[href="#datenschutz"],
+    body:has(#support:target) nav a[href="#support"] { background: var(--accent); color: #FFFFFF; }
+
+    main { max-width: 850px; margin: 0 auto; padding: 0 20px 80px; }
+    /* Mit #datenschutz oder #support in der Adresse ist nur dieser Teil zu sehen, ohne Anker beide. */
+    main:has(> section:target) > section:not(:target) { display: none; }
+    section { padding-top: 48px; }
+    section + section { border-top: 1px solid var(--border); margin-top: 64px; }
+    main:has(> section:target) > section { border-top: 0; margin-top: 0; }
+    h1 { font-size: clamp(2.2rem, 7vw, 4.2rem); line-height: 1.05; margin: 0 0 12px; }
+    h2 { margin-top: 2.2em; font-size: 1.4rem; }
+    .ribbon { width: 92px; height: 7px; border-radius: 8px; background: var(--accent); margin: 24px 0 40px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 22px 24px; }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+<header class="bar">
+  <div class="bar-inner">
+    <span class="brand">Ribbon</span>
+    <nav aria-label="Bereiche">
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="datenschutz">
+    <p class="muted">Ribbon · Datenschutz</p>
+    <h1>Deine Gedanken gehören dir.</h1>
+    <div class="ribbon"></div>
+
+    <div class="card">
+      <strong>Verantwortlicher</strong><br>
+      Jaradii<br>
+      E-Mail: <a href="mailto:appfeedback.rented544@passmail.net">appfeedback.rented544@passmail.net</a>
+    </div>
+
+    <h2>1. Geltungsbereich</h2>
+    <p>Diese Datenschutzerklärung gilt für die App Ribbon für iPhone und iPad und für diese Website. Ribbon ist eine App für Aufgaben und Notizen, die du lokal nutzen und über Apple iCloud zwischen deinen Geräten synchronisieren kannst.</p>
+
+    <h2>2. Kurz gesagt</h2>
+    <p>Jaradii erhebt mit Ribbon keine personenbezogenen Daten. Es gibt kein Benutzerkonto, keine eigenen Server, keine Werbung, keine Analyse-Werkzeuge und kein Tracking. Deine Inhalte liegen auf deinem Gerät und – wenn du es nutzt – in deinem privaten iCloud-Bereich.</p>
+
+    <h2>3. Daten auf deinem Gerät</h2>
+    <p>Aufgaben, Notizen, Checklisten, Skizzen, Termine, Erinnerungen, Tags, Projekte, Ordner und deine Einstellungen speichert Ribbon auf deinem Gerät. Damit Widgets die heutigen Einträge anzeigen können, legt Ribbon einen Auszug davon in einem Speicherbereich ab, den nur Ribbon und seine Widgets lesen können. Jaradii hat auf keine dieser Daten Zugriff.</p>
+
+    <h2>4. Synchronisierung über iCloud</h2>
+    <p>Bist du auf deinem Gerät bei iCloud angemeldet, gleicht Ribbon deine Inhalte über Apples CloudKit in deiner privaten iCloud-Datenbank ab. Alle Inhalte – Texte, Termine, Status und Reihenfolge – werden dort verschlüsselt gespeichert. Schaltest du in den Einstellungen deines Geräts den „Erweiterten Datenschutz“ für iCloud ein, sind sie Ende-zu-Ende verschlüsselt und nur noch von deinen Geräten lesbar.</p>
+    <p>Jaradii hat keinen Zugriff auf deine private iCloud-Datenbank. Für die Verarbeitung durch Apple gelten die Datenschutzrichtlinie und die iCloud-Bedingungen von Apple. Du kannst die Synchronisierung in Ribbon unter Einstellungen › iCloud jederzeit ausschalten.</p>
+
+    <h2>5. Erinnerungen und Mitteilungen</h2>
+    <p>Erinnerungen und Hinweise am Tag einer Deadline plant Ribbon als lokale Mitteilungen auf deinem Gerät. Sie werden nur nach deiner Zustimmung angezeigt; die Berechtigung kannst du jederzeit in den Systemeinstellungen ändern. Damit Änderungen von deinen anderen Geräten ankommen, nutzt iCloud stille Hintergrundmitteilungen von Apple; sie enthalten keine Inhalte deiner Einträge.</p>
+
+    <h2>6. App-Sperre mit Face ID, Touch ID oder Gerätecode</h2>
+    <p>Schaltest du die App-Sperre ein, prüft das Betriebssystem deines Geräts Gesicht, Fingerabdruck oder Gerätecode. Ribbon erhält dabei nur die Information, ob die Prüfung erfolgreich war, und hat keinen Zugriff auf biometrische Daten.</p>
+
+    <h2>7. Siri, Kurzbefehle und Handoff</h2>
+    <p>Legst du Einträge per Siri oder Kurzbefehl an, verarbeitet Apple deine Spracheingabe nach den Bedingungen von Siri; Ribbon erhält nur den fertigen Text. Mit Handoff kannst du auf einem anderen Gerät mit demselben Apple Account weitermachen. Weitergegeben wird dabei nur, welche Liste oder welcher Eintrag geöffnet ist – die Inhalte selbst kommen über iCloud.</p>
+
+    <h2>8. Datenexport</h2>
+    <p>Über Einstellungen › Daten kannst du alle Inhalte als Datei exportieren. Die Datei wird nur auf deinem Gerät erstellt; wo du sie speicherst oder an wen du sie weitergibst, entscheidest du selbst über das Teilen-Menü.</p>
+
+    <h2>9. Analyse, Werbung und Tracking</h2>
+    <p>Ribbon enthält keine Werbung, keine Analyse- oder Absturzdienste von Drittanbietern und verfolgt dich nicht über Apps oder Websites anderer Anbieter hinweg. Falls du in den Systemeinstellungen zugestimmt hast, Analysedaten mit App-Entwicklern zu teilen, stellt Apple Jaradii anonymisierte Absturz- und Nutzungsstatistiken bereit; diese lassen keinen Rückschluss auf deine Person oder deine Inhalte zu.</p>
+
+    <h2>10. Diese Website</h2>
+    <p>Diese Seite wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc. (USA). Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten wie deine IP-Adresse, um die Seite auszuliefern und vor Missbrauch zu schützen; dabei können Daten in die USA übertragen werden. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO). Näheres steht in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Die Seite selbst setzt keine Cookies, lädt keine externen Schriften oder Skripte und nutzt keine Analyse-Werkzeuge.</p>
+
+    <h2>11. Speicherdauer und Löschung</h2>
+    <p>Deine Inhalte bleiben gespeichert, bis du sie löschst. Gelöschte Einträge liegen zunächst im Papierkorb von Ribbon und lassen sich dort wiederherstellen oder endgültig entfernen. Löschst du die App, werden die Daten auf dem Gerät entfernt; Inhalte in iCloud verwaltest du über die iCloud-Einstellungen deines Geräts.</p>
+
+    <h2>12. Deine Rechte</h2>
+    <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da Jaradii keine Daten von dir speichert, verwaltest du deine Inhalte direkt in Ribbon und über deinen Apple Account. Bei Fragen erreichst du uns unter der oben genannten E-Mail-Adresse. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+
+    <h2>13. Änderungen</h2>
+    <p>Wir passen diese Datenschutzerklärung an, wenn sich Funktionen von Ribbon oder rechtliche Anforderungen ändern.</p>
+
+    <p class="muted">Stand: 25. Oktober 2026</p>
+  </section>
+
+  <section id="support">
+    <p class="muted">Ribbon · Support</p>
+    <h1>Wie können wir helfen?</h1>
+    <div class="ribbon"></div>
+
+    <div class="card">
+      <strong>Kontakt</strong><br>
+      E-Mail: <a href="mailto:appfeedback.rented544@passmail.net">appfeedback.rented544@passmail.net</a>
+    </div>
+
+    <h2>Meine Einträge erscheinen nicht auf dem anderen Gerät</h2>
+    <p>Beide Geräte müssen mit demselben Apple Account bei iCloud angemeldet sein. Öffne in Ribbon die Einstellungen (Zahnrad auf der Startseite): Unter „iCloud“ siehst du, ob „Mit iCloud synchronisieren“ eingeschaltet ist, ob der Abgleich klappt und wann er zuletzt gelungen ist. Ein roter Punkt am Zahnrad bedeutet, dass iCloud Änderungen ablehnt – oft ist dann der iCloud-Speicher voll.</p>
+
+    <h2>Datum und Tags werden nicht erkannt</h2>
+    <p>Ribbon erkennt feste deutsche Wendungen wie „heute“, „morgen“, „nächsten Montag“, „in 3 Tagen“, „3. November“, „um 15 Uhr“, „abends“, „bis Freitag“ für Deadlines und Tags mit #. Was erkannt ist, steht beim Schreiben als Chip unter dem Titel; übernommen wird es beim Schließen der Karte. Mit dem Kreuz neben den Chips bleibt der Titel, wie er ist. Notizen übernehmen nur Tags, kein Datum.</p>
+
+    <h2>Erinnerungen kommen nicht</h2>
+    <p>Erlaube Mitteilungen für Ribbon in den Systemeinstellungen unter Mitteilungen › Ribbon. In Ribbon unter Einstellungen › Erinnerungen siehst du, ob die Erlaubnis fehlt. Prüfe auch, ob ein Fokus Mitteilungen von Ribbon gerade stummschaltet.</p>
+
+    <h2>Ich komme nicht mehr in die App</h2>
+    <p>Ist die App-Sperre an und Face ID oder Touch ID klappt nicht, kannst du dich jederzeit mit deinem Gerätecode anmelden.</p>
+
+    <h2>Daten sichern und umziehen</h2>
+    <p>Unter Einstellungen › Daten › „Alle Daten exportieren“ speichert Ribbon alles in einer Datei, auch Skizzen und den Papierkorb. Mit „Aus Export wiederherstellen“ liest du sie wieder ein. Ribbon ergänzt dabei nur, was fehlt – eine ältere Sicherung überschreibt keine neueren Änderungen.</p>
+
+    <h2>Feedback oder Fehler melden</h2>
+    <p>Schreib uns bitte die Ribbon-Version (Einstellungen › Version), deine iOS- oder iPadOS-Version, das Gerätemodell und kurz, was du getan hast, bevor das Problem auftrat. Schick bitte keine Inhalte deiner Einträge mit, die du nicht teilen möchtest.</p>
+
+    <p class="muted">Ribbon 1.0 · Stand: 25. Oktober 2026</p>
+  </section>
+</main>
+</body>
+</html>
